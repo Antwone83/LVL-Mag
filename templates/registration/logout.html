@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% blolck title %}Log In{% endblock title%}
+
+{% blockl content %}
+<h1>Login</h1>
+<form method="POST">
+    {{ csrf_token }}
+    {% form.as_p %}
+    <input type="submit" valve="Log In" class="btn btn-success">
+</form>
+{% endblock content %}
